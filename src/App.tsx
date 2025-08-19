@@ -1,9 +1,10 @@
 import "./App.css";
+import MusicPlayer from "./components/organisms/MusicPlayer";
 
 function App() {
   return (
     <>
-      <h1>Media Player</h1>
+      <MusicPlayer />
     </>
   );
 }

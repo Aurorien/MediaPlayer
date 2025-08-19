@@ -3,6 +3,7 @@ import type { Song } from "../../types/Song";
 
 interface PlaylistProps {
   songs: Song[];
+  onSongSelect: (song: Song) => void;
 }
 
 function Playlist({ songs }: PlaylistProps) {
