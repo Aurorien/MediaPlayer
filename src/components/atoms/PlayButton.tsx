@@ -1,10 +1,15 @@
-interface PlayButtonProps {
+interface PlayButtonProps<T> {
   size: "small" | "big";
+  mediaItem: T;
+  onClickPlay: (mediaItem: T) => void;
 }
 
-function PlayButton({ size }: PlayButtonProps) {
+function PlayButton<T>({ size, mediaItem, onClickPlay }: PlayButtonProps<T>) {
   return (
-    <span className={`material-symbols-outlined play-button ${size}`}>
+    <span
+      className={`material-symbols-outlined play-button ${size}`}
+      onClick={() => onClickPlay(mediaItem)}
+    >
       play_circle
     </span>
   );

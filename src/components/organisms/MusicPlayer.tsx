@@ -13,10 +13,11 @@ function MusicPlayer() {
   const handleSongSelect = (selectedSong: Song) => {
     setSong(selectedSong);
   };
+
   return (
     <>
       <Header />
-      <Playlist songs={songs} onSongSelect={handleSongSelect} />
+      <Playlist songs={songs} onClickPlay={handleSongSelect} />
       {song ? <SongView song={song} /> : <p>Choose a song in the playlist.</p>}
     </>
   );

@@ -3,15 +3,15 @@ import type { Song } from "../../types/Song";
 
 interface PlaylistProps {
   songs: Song[];
-  onSongSelect: (song: Song) => void;
+  onClickPlay: (song: Song) => void;
 }
 
-function Playlist({ songs }: PlaylistProps) {
+function Playlist({ songs, onClickPlay }: PlaylistProps) {
   return (
     <section>
       <ul className="playlist">
         {songs.map((song) => (
-          <PlaylistItem key={song.id} song={song} />
+          <PlaylistItem key={song.id} song={song} onClickPlay={onClickPlay} />
         ))}
       </ul>
     </section>

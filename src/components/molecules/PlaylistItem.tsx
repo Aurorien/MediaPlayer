@@ -5,9 +5,10 @@ import SongInfo from "./SongInfoText";
 
 interface PlaylistItemProps {
   song: Song;
+  onClickPlay: (song: Song) => void;
 }
 
-function PlaylistItem({ song }: PlaylistItemProps) {
+function PlaylistItem({ song, onClickPlay }: PlaylistItemProps) {
   return (
     <li>
       <SongImage size="small" image={song.image} />
@@ -17,7 +18,7 @@ function PlaylistItem({ song }: PlaylistItemProps) {
         songName={song.name}
         artistName={song.artist}
       />
-      <PlayButton size="small" />
+      <PlayButton size="small" mediaItem={song} onClickPlay={onClickPlay} />
     </li>
   );
 }
