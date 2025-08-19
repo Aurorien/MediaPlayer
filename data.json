@@ -1,0 +1,95 @@
+{
+  "songs": [
+    {
+      "id": "34d2ec38-94d5-467b-a5c3-03b062bd737a",
+      "name": "Sky in the grass",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "1462a0a6-1f32-4f3c-b41e-c64ca79fdef3",
+      "name": "Bells in the sun",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "213a2f06-d0c5-4508-abff-c8b3e349863f",
+      "name": "Flowers everywhere",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "8e292be9-d518-42ee-a216-79fccc7559e3",
+      "name": "Eyes dive into the blue",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "5cb9afed-de76-4d42-9b7c-e5269d4d59df",
+      "name": "Lanterns of chill",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+
+    {
+      "id": "b677e018-d199-415c-b4ed-47988a4192f6",
+      "name": "Meadow rustle",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "96c3947f-6d61-49b3-819d-b3a0a8bcd295",
+      "name": "Highland wide breeze",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "88f28d00-b567-416e-83a9-b45f2f0da020",
+      "name": "It is here",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "b3bd93e3-ea4d-4d26-ae43-1b6643316315",
+      "name": "Memory of now",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    },
+    {
+      "id": "069449a7-afe6-43a9-b884-c6f9b6f5c7dc",
+      "name": "Soft petals",
+      "artist": "Aldarion",
+      "image": {
+        "src": "../assets/bluebells.jpg",
+        "alt": "Bluebells in the grass of a meadow a summer day."
+      }
+    }
+  ]
+}
