@@ -4,15 +4,21 @@ import "./Playlist.css";
 
 interface PlaylistProps {
   songs: Song[];
+  onClickSong: (song: Song) => void;
   onClickPlay: (song: Song) => void;
 }
 
-function Playlist({ songs, onClickPlay }: PlaylistProps) {
+function Playlist({ songs, onClickSong, onClickPlay }: PlaylistProps) {
   return (
     <section className="playlist">
       <ul>
         {songs.map((song) => (
-          <PlaylistItem key={song.id} song={song} onClickPlay={onClickPlay} />
+          <PlaylistItem
+            key={song.id}
+            song={song}
+            onClickSong={onClickSong}
+            onClickPlay={onClickPlay}
+          />
         ))}
       </ul>
     </section>

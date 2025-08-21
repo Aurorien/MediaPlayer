@@ -4,6 +4,7 @@ import SongImage from "../atoms/SongImage";
 import Timeline from "./Timeline";
 import ControllButtons from "./ControllButtons";
 import "./SongView.css";
+import { playSong } from "../../shared/playSong";
 
 interface SongViewProps {
   song: Song;
@@ -15,7 +16,7 @@ function SongView({ song }: SongViewProps) {
       <SongImage size="big" image={song.image} />
       <SongInfo songName={song.name} artistName={song.artist} />
       <Timeline />
-      <ControllButtons />
+      <ControllButtons mediaItem={song} onClickPlay={() => playSong(song)} />
     </section>
   );
 }

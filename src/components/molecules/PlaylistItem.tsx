@@ -6,12 +6,13 @@ import "./PlaylistItem.css";
 
 interface PlaylistItemProps {
   song: Song;
+  onClickSong: (song: Song) => void;
   onClickPlay: (song: Song) => void;
 }
 
-function PlaylistItem({ song, onClickPlay }: PlaylistItemProps) {
+function PlaylistItem({ song, onClickSong, onClickPlay }: PlaylistItemProps) {
   return (
-    <li className="playlist-item">
+    <li className="playlist-item" onClick={() => onClickSong(song)}>
       <SongImage size="small" image={song.image} />
       <SongInfoText
         size={"small"}

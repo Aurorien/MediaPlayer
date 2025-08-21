@@ -5,6 +5,7 @@ import Header from "../molecules/Header";
 import Playlist from "../molecules/Playlist";
 import SongView from "../molecules/SongView";
 import "./MusicPlayer.css";
+import { playSong } from "../../shared/playSong";
 
 function MusicPlayer() {
   const songs: Song[] = data.songs;
@@ -12,19 +13,27 @@ function MusicPlayer() {
   const [song, setSong] = useState<Song | undefined>();
 
   const handleSongSelect = (selectedSong: Song) => {
-    setSong(selectedSong);
+    if (selectedSong !== song) {
+      setSong(selectedSong);
+    } else {
+      return null;
+    }
+  };
+
+  const handleSongPlay = (selectedSong: Song) => {
+    playSong(selectedSong);
   };
 
   return (
     <>
       <Header />
       <div className="music-player-ctn">
-        <Playlist songs={songs} onClickPlay={handleSongSelect} />
-        {song ? (
-          <SongView song={song} />
-        ) : (
-          <p>Choose a song in the playlist.</p>
-        )}
+        <Playlist
+          songs={songs}
+          onClickSong={handleSongSelect}
+          onClickPlay={handleSongPlay}
+        />
+        {song && <SongView song={song} />}
       </div>
     </>
   );
