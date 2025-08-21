@@ -2,7 +2,7 @@ import type { Song } from "../../types/Song";
 import SongInfo from "./SongInfo";
 import SongImage from "../atoms/SongImage";
 import Timeline from "./Timeline";
-import ControllButtons from "./ControllButtons";
+import ControlButtons from "./ControlButtons";
 import "./SongView.css";
 import { playSong } from "../../shared/playSong";
 
@@ -16,7 +16,7 @@ function SongView({ song }: SongViewProps) {
       <SongImage size="big" image={song.image} />
       <SongInfo songName={song.name} artistName={song.artist} />
       <Timeline />
-      <ControllButtons mediaItem={song} onClickPlay={() => playSong(song)} />
+      <ControlButtons mediaItem={song} onClickPlay={() => playSong(song)} />
     </section>
   );
 }

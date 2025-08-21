@@ -1,16 +1,13 @@
 import PlayButton from "../atoms/PlayButton";
 
-interface ControllButtonsProps<T> {
+interface ControlButtonsProps<T> {
   mediaItem: T;
   onClickPlay: (mediaItem: T) => void;
 }
 
-function ControllButtons<T>({
-  mediaItem,
-  onClickPlay,
-}: ControllButtonsProps<T>) {
+function ControlButtons<T>({ mediaItem, onClickPlay }: ControlButtonsProps<T>) {
   return (
-    <section>
+    <section className="control">
       <span className="material-symbols-outlined">repeat</span>
       <span className="material-symbols-outlined">fast_rewind</span>
       <PlayButton size="big" mediaItem={mediaItem} onClickPlay={onClickPlay} />
@@ -20,4 +17,4 @@ function ControllButtons<T>({
   );
 }
 
-export default ControllButtons;
+export default ControlButtons;
