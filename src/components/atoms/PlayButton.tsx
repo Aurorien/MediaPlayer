@@ -1,3 +1,4 @@
+import "./PlayButton.css";
 interface PlayButtonProps<T> {
   size: "small" | "big";
   mediaItem: T;
@@ -6,12 +7,12 @@ interface PlayButtonProps<T> {
 
 function PlayButton<T>({ size, mediaItem, onClickPlay }: PlayButtonProps<T>) {
   return (
-    <span
+    <div
       className={`material-symbols-outlined play-button ${size}`}
       onClick={() => onClickPlay(mediaItem)}
     >
       play_circle
-    </span>
+    </div>
   );
 }
 

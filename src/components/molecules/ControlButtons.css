@@ -1,0 +1,18 @@
+.control-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+}
+
+.playback-controls-ctn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rew,
+.ffw {
+  font-size: 2.5rem;
+}

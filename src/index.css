@@ -11,3 +11,7 @@
   color: #e9f5ff;
   background-color: var(--main-color);
 }
+
+.material-symbols-outlined {
+  font-size: 1.9rem;
+}
