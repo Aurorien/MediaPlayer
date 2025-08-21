@@ -1,6 +1,15 @@
 .song-info {
+  width: 20rem;
   padding-block: 1.5rem;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .song-info {
+    width: 100%;
+    justify-content: space-around;
+  }
 }

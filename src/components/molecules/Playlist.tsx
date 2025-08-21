@@ -9,8 +9,8 @@ interface PlaylistProps {
 
 function Playlist({ songs, onClickPlay }: PlaylistProps) {
   return (
-    <section>
-      <ul className="playlist">
+    <section className="playlist">
+      <ul>
         {songs.map((song) => (
           <PlaylistItem key={song.id} song={song} onClickPlay={onClickPlay} />
         ))}

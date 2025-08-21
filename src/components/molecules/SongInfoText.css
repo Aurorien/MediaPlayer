@@ -6,4 +6,5 @@
 
 .song-info-text.center {
   align-items: center;
+  gap: 0.5rem;
 }
