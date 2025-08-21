@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../../../public/data.json";
+import data from "../../../src/data.json";
 import type { Song } from "../../types/Song";
 import Header from "../molecules/Header";
 import Playlist from "../molecules/Playlist";
