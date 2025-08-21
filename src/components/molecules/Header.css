@@ -1,4 +1,5 @@
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +9,7 @@ header {
     var(--main-color),
     var(--secondary-c-color)
   );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 5px 10px var(--main-color);
 }
 
 header * {
