@@ -1,4 +1,5 @@
 import SongInfoText from "./SongInfoText";
+import "./SongInfo.css";
 
 interface SongInfoProps {
   songName: string;

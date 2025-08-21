@@ -1,5 +1,6 @@
 import PlaylistItem from "./PlaylistItem";
 import type { Song } from "../../types/Song";
+import "./Playlist.css";
 
 interface PlaylistProps {
   songs: Song[];

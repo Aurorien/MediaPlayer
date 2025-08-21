@@ -1,7 +1,9 @@
+import "./Timeline.css";
+
 function Timeline() {
   return (
-    <section>
-      <p>0:10</p>
+    <section className="timeline-section">
+      <p>1:25</p>
       <div className="mock-timeline">
         <div className="mock-timeline-inner"></div>
       </div>

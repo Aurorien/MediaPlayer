@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(
+    to bottom,
+    var(--main-color),
+    var(--secondary-c-color)
+  );
+}
+
+header * {
+  background: inherit;
+}

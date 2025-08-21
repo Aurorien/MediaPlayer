@@ -1,3 +1,5 @@
+import "./SongInfoText.css";
+
 interface SongInfoTextProps {
   size: "small" | "big";
   center: boolean;
@@ -12,7 +14,7 @@ function SongInfoText({
   artistName,
 }: SongInfoTextProps) {
   return (
-    <div className={`song-info ${size} ${center ? "center" : ""}`}>
+    <div className={`song-info-text ${size} ${center ? "center" : ""}`}>
       <h2>{songName}</h2>
       <p>{artistName}</p>
     </div>

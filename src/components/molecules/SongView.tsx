@@ -3,6 +3,7 @@ import SongInfo from "./SongInfo";
 import SongImage from "../atoms/SongImage";
 import Timeline from "./Timeline";
 import ControllButtons from "./ControllButtons";
+import "./SongView.css";
 
 interface SongViewProps {
   song: Song;
@@ -11,7 +12,7 @@ interface SongViewProps {
 function SongView({ song }: SongViewProps) {
   return (
     <section className="song-view">
-      <SongImage size="small" image={song.image} />
+      <SongImage size="big" image={song.image} />
       <SongInfo songName={song.name} artistName={song.artist} />
       <Timeline />
       <ControllButtons />

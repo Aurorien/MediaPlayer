@@ -1,0 +1,25 @@
+.timeline-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+}
+
+.mock-timeline,
+.mock-timeline-inner {
+  height: 0.5rem;
+  border-radius: 2rem;
+}
+
+.mock-timeline {
+  background-color: rgb(0, 0, 0);
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.mock-timeline-inner {
+  background-color: rgb(208, 208, 233);
+  width: 45%;
+}

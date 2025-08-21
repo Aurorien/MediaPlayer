@@ -1,0 +1,14 @@
+.playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.playlist-item > :last-child {
+  margin-left: auto;
+}
+
+.playlist-item:hover {
+  box-shadow: inset 2px 1px 5px var(--primary-c-color);
+}

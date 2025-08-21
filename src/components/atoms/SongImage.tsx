@@ -1,4 +1,5 @@
 import type { Image } from "../../types/Image";
+import "./SongImage.css";
 
 interface SongImageProps {
   size: "small" | "big";

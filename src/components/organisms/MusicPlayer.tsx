@@ -1,9 +1,10 @@
 import { useState } from "react";
-import data from "../../../data.json";
+import data from "../../../public/data.json";
 import type { Song } from "../../types/Song";
 import Header from "../molecules/Header";
 import Playlist from "../molecules/Playlist";
 import SongView from "../molecules/SongView";
+import "./MusicPlayer.css";
 
 function MusicPlayer() {
   const songs: Song[] = data.songs;
@@ -17,8 +18,14 @@ function MusicPlayer() {
   return (
     <>
       <Header />
-      <Playlist songs={songs} onClickPlay={handleSongSelect} />
-      {song ? <SongView song={song} /> : <p>Choose a song in the playlist.</p>}
+      <div className="music-player-ctn">
+        <Playlist songs={songs} onClickPlay={handleSongSelect} />
+        {song ? (
+          <SongView song={song} />
+        ) : (
+          <p>Choose a song in the playlist.</p>
+        )}
+      </div>
     </>
   );
 }

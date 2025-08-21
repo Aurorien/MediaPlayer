@@ -1,7 +1,8 @@
 import type { Song } from "../../types/Song";
 import PlayButton from "../atoms/PlayButton";
 import SongImage from "../atoms/SongImage";
-import SongInfo from "./SongInfoText";
+import SongInfoText from "./SongInfoText";
+import "./PlaylistItem.css";
 
 interface PlaylistItemProps {
   song: Song;
@@ -10,9 +11,9 @@ interface PlaylistItemProps {
 
 function PlaylistItem({ song, onClickPlay }: PlaylistItemProps) {
   return (
-    <li>
+    <li className="playlist-item">
       <SongImage size="small" image={song.image} />
-      <SongInfo
+      <SongInfoText
         size={"small"}
         center={false}
         songName={song.name}
