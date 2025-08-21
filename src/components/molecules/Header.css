@@ -13,3 +13,7 @@ header {
 header * {
   background: inherit;
 }
+
+header .back {
+  font-size: 1.7rem;
+}
