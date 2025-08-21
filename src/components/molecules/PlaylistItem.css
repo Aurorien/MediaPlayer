@@ -3,11 +3,17 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  padding-right: 2rem;
+  padding-right: 8%;
+  border: 1px solid var(--secondary-c-color);
 }
 
 .playlist-item > :last-child {
+  padding-left: 1rem;
   margin-left: auto;
+}
+
+.playlist-item:last-child {
+  border-bottom: none;
 }
 
 .playlist-item:hover {
