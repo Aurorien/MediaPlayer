@@ -2,6 +2,7 @@
   --main-color: #0f1c21;
   --primary-c-color: #24571f;
   --secondary-c-color: #0d2516;
+  --transparent-secondary-c-color: #0d2516a9;
 }
 
 * {
@@ -9,6 +10,9 @@
   margin: 0;
   padding: 0;
   color: #e9f5ff;
+}
+
+body {
   background-color: var(--main-color);
 }
 
