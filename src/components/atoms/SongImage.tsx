@@ -1,3 +1,4 @@
+import { getImageUrl } from "../../shared/getImageUrl";
 import type { Image } from "../../types/Image";
 import "./SongImage.css";
 
@@ -8,7 +9,11 @@ interface SongImageProps {
 
 function SongImage({ size, image }: SongImageProps) {
   return (
-    <img className={`song-image ${size}`} src={image.src} alt={image.alt} />
+    <img
+      className={`song-image ${size}`}
+      src={getImageUrl(image.imageFilename)}
+      alt={image.alt}
+    />
   );
 }
 
