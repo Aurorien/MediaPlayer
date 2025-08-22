@@ -1,4 +1,4 @@
-import PlayButton from "../atoms/PlayButton";
+import PlayButton from "../../../atoms/generic/PlayButton/PlayButton";
 import "./ControlButtons.css";
 
 interface ControlButtonsProps<T> {

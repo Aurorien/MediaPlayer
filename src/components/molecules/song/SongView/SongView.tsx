@@ -1,10 +1,10 @@
-import type { Song } from "../../types/Song";
-import SongInfo from "./SongInfo";
-import SongImage from "../atoms/SongImage";
-import Timeline from "./Timeline";
-import ControlButtons from "./ControlButtons";
+import type { Song } from "../../../../types/Song";
+import SongInfo from "../SongInfo/SongInfo";
+import SongImage from "../../../atoms/SongImage/SongImage";
+import Timeline from "../Timeline/Timeline";
+import ControlButtons from "../../generic/ControlButtons/ControlButtons";
 import "./SongView.css";
-import { playSong } from "../../shared/playSong";
+import { playSong } from "../../../../services/playSong";
 
 interface SongViewProps {
   song: Song;

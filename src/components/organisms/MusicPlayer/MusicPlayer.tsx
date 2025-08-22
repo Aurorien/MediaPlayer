@@ -1,11 +1,11 @@
 import { useState } from "react";
-import data from "../../../src/data.json";
-import type { Song } from "../../types/Song";
-import Header from "../molecules/Header";
-import Playlist from "../molecules/Playlist";
-import SongView from "../molecules/SongView";
+import data from "../../../data.json";
+import type { Song } from "../../../types/Song";
+import Header from "../../molecules/Header/Header";
+import Playlist from "../../molecules/playlist/Playlist/Playlist";
+import SongView from "../../molecules/song/SongView/SongView";
 import "./MusicPlayer.css";
-import { playSong } from "../../shared/playSong";
+import { playSong } from "../../../services/playSong";
 
 function MusicPlayer() {
   const songs: Song[] = data.songs;

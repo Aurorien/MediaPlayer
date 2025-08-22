@@ -1,7 +1,7 @@
-import type { Song } from "../../types/Song";
-import PlayButton from "../atoms/PlayButton";
-import SongImage from "../atoms/SongImage";
-import SongInfoText from "./SongInfoText";
+import type { Song } from "../../../../types/Song";
+import PlayButton from "../../../atoms/generic/PlayButton/PlayButton";
+import SongImage from "../../../atoms/SongImage/SongImage";
+import SongInfoText from "../../shared/SongInfoText/SongInfoText";
 import "./PlaylistItem.css";
 
 interface PlaylistItemProps {

@@ -1,5 +1,5 @@
-import { getImageUrl } from "../../shared/getImageUrl";
-import type { Image } from "../../types/Image";
+import { getImageUrl } from "../../../utils/getImageUrl";
+import type { Image } from "../../../types/Image";
 import "./SongImage.css";
 
 interface SongImageProps {
