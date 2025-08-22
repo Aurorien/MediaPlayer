@@ -5,10 +5,11 @@ header {
   align-items: center;
   padding: 1.5rem 2rem;
   background: linear-gradient(
-    to bottom,
-    var(--main-color),
-    var(--secondary-c-color)
-  );
+      to bottom,
+      var(--secondary-c-color) 0%,
+      transparent 50%
+    ),
+    linear-gradient(to top, var(--secondary-c-color) 0%, transparent 50%);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 5px 10px var(--main-color);
 }
 
