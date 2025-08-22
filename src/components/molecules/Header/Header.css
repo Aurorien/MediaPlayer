@@ -14,7 +14,7 @@ header {
 }
 
 header * {
-  background: inherit;
+  background: none;
 }
 
 header .back {
