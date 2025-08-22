@@ -1,11 +1,15 @@
 .music-player-ctn {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
   width: 100%;
-  height: calc(100vh - 5.4rem);
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
   .music-player-ctn {
-    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 5.4rem);
   }
 
   .music-player-ctn > :first-child {
