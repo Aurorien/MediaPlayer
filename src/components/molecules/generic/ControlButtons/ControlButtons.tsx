@@ -3,10 +3,15 @@ import "./ControlButtons.css";
 
 interface ControlButtonsProps<T> {
   mediaItem: T;
+  isPlaying: boolean;
   onClickPlay: (mediaItem: T) => void;
 }
 
-function ControlButtons<T>({ mediaItem, onClickPlay }: ControlButtonsProps<T>) {
+function ControlButtons<T>({
+  mediaItem,
+  isPlaying,
+  onClickPlay,
+}: ControlButtonsProps<T>) {
   return (
     <section className="control-buttons">
       <span className="material-symbols-outlined">repeat</span>
@@ -15,6 +20,7 @@ function ControlButtons<T>({ mediaItem, onClickPlay }: ControlButtonsProps<T>) {
         <PlayButton
           size="big"
           mediaItem={mediaItem}
+          isPlaying={isPlaying}
           onClickPlay={onClickPlay}
         />
         <span className="material-symbols-outlined ffw">fast_forward</span>

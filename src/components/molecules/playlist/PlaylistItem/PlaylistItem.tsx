@@ -6,11 +6,17 @@ import "./PlaylistItem.css";
 
 interface PlaylistItemProps {
   song: Song;
+  isPlaying: boolean;
   onClickSong: (song: Song) => void;
   onClickPlay: (song: Song) => void;
 }
 
-function PlaylistItem({ song, onClickSong, onClickPlay }: PlaylistItemProps) {
+function PlaylistItem({
+  song,
+  isPlaying,
+  onClickSong,
+  onClickPlay,
+}: PlaylistItemProps) {
   return (
     <li className="playlist-item" onClick={() => onClickSong(song)}>
       <SongImage size="small" image={song.image} />
@@ -20,7 +26,12 @@ function PlaylistItem({ song, onClickSong, onClickPlay }: PlaylistItemProps) {
         songName={song.name}
         artistName={song.artist}
       />
-      <PlayButton size="small" mediaItem={song} onClickPlay={onClickPlay} />
+      <PlayButton
+        size="small"
+        mediaItem={song}
+        isPlaying={isPlaying}
+        onClickPlay={onClickPlay}
+      />
     </li>
   );
 }

@@ -11,6 +11,7 @@ function MusicPlayer() {
   const songs: Song[] = data.songs;
 
   const [song, setSong] = useState<Song | undefined>();
+  const [songPlayingId, setSongPlayingId] = useState<string | null>(null);
 
   const handleSongSelect = (selectedSong: Song) => {
     if (selectedSong !== song) {
@@ -21,6 +22,9 @@ function MusicPlayer() {
   };
 
   const handleSongPlay = (selectedSong: Song) => {
+    setSongPlayingId(
+      selectedSong.id === songPlayingId ? null : selectedSong.id
+    );
     playSong(selectedSong);
   };
 
@@ -30,10 +34,17 @@ function MusicPlayer() {
       <div className="music-player-ctn">
         <Playlist
           songs={songs}
+          songPlayingId={songPlayingId}
           onClickSong={handleSongSelect}
           onClickPlay={handleSongPlay}
         />
-        {song && <SongView song={song} />}
+        {song && (
+          <SongView
+            song={song}
+            isPlaying={song.id === songPlayingId}
+            onClickPlay={handleSongPlay}
+          />
+        )}
       </div>
     </>
   );
