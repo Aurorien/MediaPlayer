@@ -1,4 +1,4 @@
-import SongInfoText from "../../shared/SongInfoText/SongInfoText";
+import SongInfoText from "../../SongInfoText/SongInfoText";
 import "./SongInfo.css";
 
 interface SongInfoProps {
